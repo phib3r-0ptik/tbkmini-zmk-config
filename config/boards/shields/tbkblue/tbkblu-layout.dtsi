@@ -1,6 +1,12 @@
 #include <physical_layouts.dtsi>
 
 / {
+
+    // Tell ZMK Studio to use this shared layout
+    chosen {
+        zmk,physical-layout = &physical_layout_0;
+    };
+
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "TBKblu" ;
